@@ -61,39 +61,25 @@ logout
 echo "Installing Git..."
 brew install git
 
-# Install Powerline fonts
-echo "Installing Powerline fonts..."
-git clone https://github.com/powerline/fonts.git
-cd fonts || exit
-sh -c ./install.sh
-
-# Install ruby
-if test ! "$(which ruby)"; then
-    echo "Installing Ruby..."
-    brew install ruby
-    echo "Adding the brew ruby path to shell config..."
-    echo 'export PATH='"/usr/local/opt/ruby/bin:$PATH" >>~/.bash_profile
-else
-    echo "Ruby already installed!"
-fi
-
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install nmap
-
-# Install other useful binaries.
-brew install speedtest_cli
-
-# Core casks
+# Workflow casks
 brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" google-chrome
+brew cask install --appdir="/Applications" readdle-spark
+brew cask install --appdir="/Applications" vlc
 
-# Development tool casks
-brew cask install --appdir="/Applications" visual-studio-code
-
-# Misc casks
-brew cask install --appdir="/Applications" firefox
+# Apps casks
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" caffeine
+brew cask install --appdir="/Applications" sketch
+brew cask install --appdir="/Applications" notion
+brew cask install --appdir="/Applications" insomnia
+brew cask install --appdir="/Applications" cleanshot
+brew cask install --appdir="/Applications" figma
+
+# Add Icons to Dock
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Google Chrome.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Sketch.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
 # Remove outdated versions from the cellar.
 echo "Running brew cleanup..."
