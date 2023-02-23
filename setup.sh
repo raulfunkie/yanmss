@@ -62,24 +62,24 @@ echo "Installing Git..."
 brew install git
 
 # Workflow casks
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" readdle-spark
-brew cask install --appdir="/Applications" vlc
+brew install --appdir="/Applications" alfred
+brew install --appdir="/Applications" google-chrome
+brew install --appdir="/Applications" readdle-spark
+brew install --appdir="/Applications" vlc
 
 # Apps casks
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" sketch
-brew cask install --appdir="/Applications" notion
-brew cask install --appdir="/Applications" insomnia
-brew cask install --appdir="/Applications" cleanshot
-brew cask install --appdir="/Applications" figma
-brew cask install --appdir="/Applications" steermouse
-brew cask install --appdir="/Applications" cursorsense
-brew cask install --appdir="/Applications" transmit
-brew cask install --appdir="/Applications" nova
-brew cask install --appdir="/Applications" sf-symbols
+brew install --appdir="/Applications" slack
+brew install --appdir="/Applications" 1password
+brew install --appdir="/Applications" sketch
+brew install --appdir="/Applications" notion
+brew install --appdir="/Applications" insomnia
+brew install --appdir="/Applications" cleanshot
+brew install --appdir="/Applications" figma
+brew install --appdir="/Applications" steermouse
+brew install --appdir="/Applications" cursorsense
+brew install --appdir="/Applications" transmit
+brew install --appdir="/Applications" nova
+brew install --appdir="/Applications" sf-symbols
 # brew cask install --appdir="/Applications" loopback
 
 # Add Icons to Dock
