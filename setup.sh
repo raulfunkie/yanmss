@@ -75,6 +75,12 @@ brew cask install --appdir="/Applications" notion
 brew cask install --appdir="/Applications" insomnia
 brew cask install --appdir="/Applications" cleanshot
 brew cask install --appdir="/Applications" figma
+brew cask install --appdir="/Applications" steermouse
+brew cask install --appdir="/Applications" cursorsense
+brew cask install --appdir="/Applications" transmit
+brew cask install --appdir="/Applications" nova
+brew cask install --appdir="/Applications" sf-symbols
+# brew cask install --appdir="/Applications" loopback
 
 # Add Icons to Dock
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
